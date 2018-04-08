@@ -1,4 +1,6 @@
 package com.your.dream.real;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Hello world!
@@ -6,6 +8,7 @@ package com.your.dream.real;
  */
 public class App 
 {
+	private static final Logger logger = LoggerFactory.getLogger(App.class);
 	private App() 
 	{
 		// do not create App class directly
@@ -13,7 +16,7 @@ public class App
 	
     public static void main( String[] args ) {
     	for(String arg : args) {
-    		System.out.println("parameter: " + arg);
+			logger.info("My Message");
     	}
     }
 }
